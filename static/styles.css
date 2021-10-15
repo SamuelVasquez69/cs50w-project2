@@ -24,7 +24,7 @@ body{
 .header{ /* configuramos los header*/
     width: 100%;
     height: 100px;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
 }
@@ -136,8 +136,70 @@ body{
 
 .mensaje-div{
     width: 60%;
-    height: 50%;
-    background-color: blue;
+    height: 70%;
+	background: rgba(0,0,0,0.8);
     border: 3px;
     padding-left: 15px;
+}
+.mensaje-div h2{
+    text-align: center;
+}
+.mensajes{
+    flex: 1;
+    margin-right: 20px;
+    font-family: sans-serif;
+    margin-top: 15px;
+    height: 500%;
+}
+.messagase{ /*donde se mostrara los mensajes */
+    height: 440px;
+    margin: 20px;
+}
+.mensaje-otro{
+    background-color: gray;
+    padding: 10px;
+    margin: 15px;
+    color: white;
+    width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.mensaje-usuario{
+    margin-left: auto;
+    padding: 10px;
+    margin: 15px;
+    margin-left: auto;
+    width: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+}
+form input{
+    flex: 1;
+    width: 80%;
+    height: 30px;
+    border: none;
+    outline: none;
+    margin-left: 2px;
+    border: 1px;
+    padding: 5px;
+    display: inline-block;
+    text-align: justify;
+}
+form button{
+    flex: 1;
+    width:17%;
+    height: 30px;
+    margin: none;
+    border: none;
+    outline: none;
+    background-color: darkslategray;
+    color: black;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.2s ease;
 }
